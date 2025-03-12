@@ -1,0 +1,16 @@
+SHOW DATABASES; 
+-- CREATE DATABASE my_first_database; 
+-- CREATE DATABASE my_second_database; 
+-- DROP DATABASE my_second_database; 
+-- CREATE DATABASE IF NOT EXISTS third_database; 
+-- DROP DATABASE IF EXISTS third_database; 
+USE my_first_database; 
+CREATE TABLE calorii (nr_crt INT, calorii INT);
+DROP TABLE calorii; 
+CREATE TABLE IF NOT EXISTS calorii (nr_crt INT, calorii INT);
+INSERT INTO calorii VALUES (1, 2500);
+INSERT INTO calorii VALUES (2, 3000);
+INSERT INTO calorii VALUES (3500, 3);
+INSERT INTO calorii SET nr_crt=4, calorii=1900;
+INSERT INTO calorii SET calorii=1900;
+SELECT * FROM calorii; 
